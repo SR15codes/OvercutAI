@@ -10,6 +10,13 @@ def main():
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded Image', use_column_width=True)
 
+        #image classification
+        import cv2
+        import numpy as np
+        import pandas as pd
+        import matplotlib.pyplot as plt
+        import tensorflow as tf
+        from tensorflow.keras import layers
         a='model.h5'
         from keras.models import load_model
         x = load_model(a)
