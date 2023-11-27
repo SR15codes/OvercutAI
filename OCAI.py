@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 def main():
-    st.title('Film Club - Image Uploader')
+    st.title('Overcut AI')
 
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
