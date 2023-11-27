@@ -1,6 +1,13 @@
 import streamlit as st
 from PIL import Image
 
+import cv2
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from tensorflow.keras import layers
+
 def main():
     st.title('Overcut AI')
 
@@ -11,12 +18,7 @@ def main():
         st.image(image, caption='Uploaded Image', use_column_width=True)
 
         #image classification
-        import cv2
-        import numpy as np
-        import pandas as pd
-        import matplotlib.pyplot as plt
-        import tensorflow as tf
-        from tensorflow.keras import layers
+
         a='model.h5'
         from keras.models import load_model
         x = load_model(a)
