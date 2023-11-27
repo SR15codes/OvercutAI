@@ -31,9 +31,9 @@ def main():
     print(predictions_single)
     if (predictions_single[0][0]>predictions_single[0][1]):
         print('Predicted class is Accident')
-    else:
+     else:
         print('Predicted class is Non Accident')
-#trained model and prediction ends
+            #trained model and prediction ends
     else:
         st.info('Please upload an image.')
 
