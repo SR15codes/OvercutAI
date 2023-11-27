@@ -15,7 +15,7 @@ def main():
     x = load_model(a)
 
     test_photo = uploaded_file
-     img = cv2.imread(test_photo)
+    img = cv2.imread(test_photo)
 
     size=(250,250)
     background_color="white"
